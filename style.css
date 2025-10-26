@@ -20,7 +20,7 @@ body {
 
 .profile-image {
    
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -30,9 +30,9 @@ body {
 
 .social-links {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     gap: 15px;
 }
@@ -47,7 +47,6 @@ body {
     color: #fff;
     font-size: 27px;
     border-radius: 50%;
-    margin-bottom: 600px;
 }
 
 .social-links i:hover {
@@ -62,7 +61,6 @@ body {
     }
 
     .social-links {
-        bottom: 10px;
         gap: 5px;
     }
 
@@ -70,7 +68,7 @@ body {
         width: 40px;
         height: 40px;
         font-size: 20px;
-        margin-bottom: 600px;
+        margin-top: 50px;
+
     }
 }
-
