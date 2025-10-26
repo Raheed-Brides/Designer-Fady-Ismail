@@ -37,6 +37,10 @@ body {
     gap: 15px;
 }
 
+.social-links a {
+    text-decoration: none;
+}
+
 .social-links i {
     display: flex;
     align-items: center;
