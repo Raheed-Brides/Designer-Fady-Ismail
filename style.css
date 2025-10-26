@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('flower-pattern.png');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-image {
+   
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.social-links i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 27px;
+    border-radius: 50%;
+}
+
+.social-links i:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .profile-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .social-links {
+        bottom: 10px;
+        gap: 5px;
+    }
+
+    .social-links i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
